@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "45383915246",
+    "firebase_url": "https://freshvegis-73278.firebaseio.com",
+    "project_id": "freshvegis-73278",
+    "storage_bucket": "freshvegis-73278.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45383915246:android:ae02e9c89b08e5ed1d85ff",
+        "android_client_info": {
+          "package_name": "com.example.freshvegis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "45383915246-a2q8mnd91i6sklpjvnhqlg3sr7b7fglc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRJ_FeUC8_lJOQEpc7W2iRwlu1Qz0CvkI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "45383915246-a2q8mnd91i6sklpjvnhqlg3sr7b7fglc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

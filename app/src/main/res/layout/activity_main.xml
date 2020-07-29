@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/loginscrrensecond"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backbutton"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    />
+
+                    <TextView
+                        android:id="@+id/helloThere"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_below="@+id/backButton"
+                        android:layout_marginTop="60dp"
+                        android:fontFamily="@font/arialround"
+                        android:gravity="center"
+                        android:text="Hello There!"
+                        android:textColor="@color/black"
+                        android:textSize="30dp" />
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/mobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/helloThere"
+                    android:focusableInTouchMode="true">
+
+                    <EditText
+                        android:id="@+id/EnterE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:ems="10"
+                        android:fontFamily="@font/arialround"
+                        android:hint="Mobile No"
+                        android:inputType="number"
+                        android:textSize="20dp"
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/EnterYourPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mobileNumber"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    app:passwordToggleEnabled="true"
+                    >
+
+                    <EditText
+                        android:id="@+id/EnterPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:ems="10"
+                        android:fontFamily="@font/arialround"
+
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:textSize="20dp"
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <ProgressBar
+                    android:id="@+id/newprogressbar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"
+                    android:layout_below="@+id/EnterYourPassword"
+                    />
+
+                    <CheckBox
+                        android:id="@+id/rememberMe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/newprogressbar2"
+                        android:layout_gravity="left"
+
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/arialround"
+                        android:text="Remember Me"
+
+                        />
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerHorizontal="true"
+
+                    android:text="Login"
+                    android:textAllCaps="false"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/arialround"
+                    android:textColor="#fff"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/firstlogin"
+                    android:layout_below="@+id/rememberMe"
+                    />
+
+
+                        <TextView
+                            android:id="@+id/ResetPassword"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/login"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="25dp"
+                            android:fontFamily="@font/arialround"
+
+                            android:onClick="Reset"
+                            android:text="Forgot Password?"
+
+                            android:textColor="@color/black" />
+
+
+                        <TextView
+
+                            android:id="@+id/owner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ResetPassword"
+
+
+                            android:layout_centerHorizontal="true"
+
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="20dp"
+
+                            android:fontFamily="@font/arialround"
+                            android:onClick="Owner"
+                            android:text="Are You a Seller?"
+                            android:textColor="@color/black" />
+
+                    <!--    <Button-->
+                    <!--                android:id="@+id/donthave"-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                -->
+                    <!--                android:layout_alignParentBottom="true"-->
+
+                    <!--                android:fontFamily="@font/arialround"-->
+                    <!--                android:text="Don't have an Account? Register"-->
+                    <!--                android:textColor="@color/white"-->
+                    <!--                android:layout_below="@+id/owner"-->
+
+                    <!--                />-->
+
+                        <TextView
+                            android:id="@+id/donthave"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Don't have an Account? Register"
+                            android:fontFamily="@font/arialround"
+                            android:layout_alignParentBottom="true"
+
+                            android:textSize="14dp"
+                            android:textColor="@color/white"
+                            android:gravity="center_horizontal"
+                            android:layout_marginBottom="10dp"
+
+
+                            />
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>

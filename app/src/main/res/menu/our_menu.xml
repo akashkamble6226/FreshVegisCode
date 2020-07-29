@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Search"
+        android:fontFamily="@font/arialround"
+        android:id="@+id/item3"
+        android:icon="@drawable/search_icon"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/item1"
+        android:title="cart"
+        android:fontFamily="@font/arialround"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        app:showAsAction="ifRoom"/>
+
+
+    <item
+        android:id="@+id/item4"
+        android:fontFamily="@font/arialround"
+
+        android:title="About_Developer"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/item2"
+        android:fontFamily="@font/arialround"
+
+        android:title="Logout"
+        app:showAsAction="never"/>
+
+
+
+</menu>

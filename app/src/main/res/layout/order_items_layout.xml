@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:padding="15dp"
+
+        >
+
+        <TextView
+            android:id="@+id/in_cart_name2"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/arialround"
+
+            android:text="Product Name"
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/in_cart_qty2"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp"
+            android:text="Product Quantity"
+            android:fontFamily="@font/arialround"
+
+            android:textAlignment="viewEnd"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:id="@+id/in_cart_price2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Product Price"
+            android:textSize="14dp"
+            android:fontFamily="@font/arialround"
+
+            android:textColor="@color/white"
+            android:layout_below="@+id/in_cart_qty2"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/in_cart_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Orderd Date"
+            android:textSize="14dp"
+            android:fontFamily="@font/arialround"
+
+            android:textColor="@color/white"
+            android:layout_below="@+id/in_cart_price2"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            />
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

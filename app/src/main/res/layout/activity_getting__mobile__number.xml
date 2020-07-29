@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginscrrensecond"
+    tools:context=".Getting_Mobile_Number">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EnterMobileNumberHere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_centerVertical="true"
+        android:focusableInTouchMode="true"
+        >
+    <EditText
+        android:id="@+id/GiveMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Enter Your Mobile Number"
+        android:fontFamily="@font/arialround"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="number"
+        android:textSize="20dp"
+        android:ems="10"
+        android:layout_marginTop="5dp"
+
+        />
+
+
+
+        <ProgressBar
+            android:id="@+id/GetPhoneProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:layout_below="@+id/EnterMobileNumberHere"
+
+
+            />
+
+
+        <Button
+            android:id="@+id/GetOTP"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arialround"
+            android:text="Get OTP"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/firstlogin"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/GetPhoneProgressBar"
+            android:textAllCaps="false"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+</RelativeLayout>

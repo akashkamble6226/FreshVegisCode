@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/orderplaced"
+    tools:context=".OrderPlaced">
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backbutton"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="GoingBack"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/arialround"
+        android:gravity="center_horizontal"
+        android:text="Your Order has been Placed Successfully!"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+</RelativeLayout>

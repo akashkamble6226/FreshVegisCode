@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginscrrensecond"
+    android:orientation="vertical"
+    tools:context=".Register_OTP_Activity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_centerVertical="true"
+        android:focusableInTouchMode="true"
+        >
+        <EditText
+            android:id="@+id/Otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arialround"
+            android:hint="Enter OTP"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="number"
+            android:textSize="20dp"
+            android:ems="10"
+            android:layout_marginTop="5dp"
+
+            />
+        <ProgressBar
+            android:id="@+id/otpProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:layout_below="@+id/Otp"
+            />
+
+
+        <Button
+            android:id="@+id/Verify"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arialround"
+            android:text="Verify"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/firstlogin"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/otpProgressBar"
+            android:textAllCaps="false"
+            />
+
+
+
+
+
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
